@@ -1,0 +1,50 @@
+/* Navigation bar */
+.navbar {
+    background-color: #333;
+    font-size: 1.2em;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Unordered list */
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* List items */
+.navbar li {
+    display: inline;
+    margin: 0 1em;
+}
+
+/* Anchor tags */
+.navbar li a {
+    color: #fff;
+}
+/* Main content */
+main {
+    padding-top: 5em;
+}
+
+/* Sections within main content */
+main section {
+    padding: 2em 1em;
+    text-align: center;
+}
+
+/* Home section */
+#home h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+#home p {
+    font-size: 1.2em;
+    color: #666;
+}

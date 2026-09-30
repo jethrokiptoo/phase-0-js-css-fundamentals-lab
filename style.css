@@ -1,99 +1,112 @@
-/* Navigation bar */
+/* Step 4: Style the Navigation Bar */
 .navbar {
-    background-color: #333;
-    font-size: 1.2em;
-    padding: 1em;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+  background-color: #333;
+  font-size: 1.2em;
+  padding: 15px 20px;
+  text-align: center; 
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-/* Unordered list */
 .navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none; 
+  margin: 0;
+  padding: 0;
 }
 
-/* List items */
-.navbar li {
-    display: inline;
-    margin: 0 1em;
+.navbar ul li {
+  display: inline;
+  margin: 0 1em;
 }
 
-/* Anchor tags */
-.navbar li a {
-    color: #fff;
-}
-/* Main content */
-main {
-    padding-top: 5em;
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none; 
 }
 
-/* Sections within main content */
-main section {
-    padding: 2em 1em;
-    text-align: center;
+/* Step 5: Style the Main Content */
+.main-content {
+  padding-top: 5em;
 }
 
-/* Home section */
+section {
+  padding: 2em 1em;
+  text-align: center;
+}
+
 #home h1 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
+  font-size: 2.5em;
 }
 
 #home p {
-    font-size: 1.2em;
-    color: #666;
+  font-size: 1.2em;
 }
-/* Portfolio container */
+
+.main-content, .home-section {
+  font-family: 'Helvetica Neue', Arial, sans-serif; 
+  color: #222222; 
+  margin: 20px auto; 
+}
+
+.main-content p, .home-section p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Step 6: Style the Portfolio Section */
 .portfolio-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 1em;
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-around;
+  padding: 1em;
 }
 
-/* Portfolio items */
 .portfolio-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    margin: 1em;
-    padding: 1em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    box-sizing: border-box;
-    transition: transform 0.3s;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 1em;
+  padding: 1em;
+  width: 30%;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s; 
 }
 
-/* Headings within portfolio items */
-.portfolio-item h3 {
-    font-weight: bold;
-    margin-bottom: 0.5em;
-}
-
-/* Paragraphs within portfolio items */
-.portfolio-item p {
-    margin-bottom: 0.5em;
-    color: #666;
-}
-
-/* Images within portfolio items */
 .portfolio-item img {
-    width: 100%;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+.portfolio-item h3 {
+  font-size: 20px;
+  color: #333333;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.portfolio-item p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 0.5em;
+}
+
+/* Step 7: Add Hover Effect for Portfolio Items */
 .portfolio-item:hover {
-    transform: scale(1.05);
+  transform: scale(1.05); 
 }
+
+/* Step 8: Style the Footer */
 #footer {
-    background-color: #222;
-    color: #fff;
-    padding: 2em;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  background-color: #222;
+  color: #fff;
+  padding: 2em;
+  text-align: center;
+  position: relative; 
+  bottom: 0;
+  width: 100%;
 }
